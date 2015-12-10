@@ -74,7 +74,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="listmaker.cpp" />
+    <ClCompile Include="programFunctions.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FunctionLib.h" />
