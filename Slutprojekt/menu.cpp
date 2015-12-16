@@ -1,6 +1,7 @@
 #include <iostream>
 #include "menu.h"
 #include "constants.h"
+#include "addPerson.h"
 
 using namespace std;
 
@@ -31,6 +32,7 @@ void selectionMenu(void){
 
 		case 2:
 			cout << "Add person" << endl;
+			addPersonToList();
 			break;
 		case 3:
 			cout << "Rename person" << endl;

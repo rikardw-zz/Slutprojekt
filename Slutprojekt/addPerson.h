@@ -1,1 +1,3 @@
-newPerson addPerson(string foreName, string lastName, string signature, double length);
+person addPerson(string foreName, string lastName, string signature, double length);
+
+void addPersonToList(void);
