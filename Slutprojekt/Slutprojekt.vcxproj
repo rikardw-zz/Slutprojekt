@@ -74,11 +74,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="programFunctions.cpp" />
+    <ClCompile Include="addPerson.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="menu.cpp" />
+    <ClCompile Include="openList.cpp" />
+    <ClCompile Include="randomizeList.cpp" />
+    <ClCompile Include="removePerson.cpp" />
+    <ClCompile Include="saveList.cpp" />
+    <ClCompile Include="searchList.cpp" />
+    <ClCompile Include="showList.cpp" />
+    <ClCompile Include="sortList.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="FunctionLib.h" />
+    <ClInclude Include="addPerson.h" />
+    <ClInclude Include="constants.h" />
+    <ClInclude Include="openList.h" />
+    <ClInclude Include="randomizeList.h" />
+    <ClInclude Include="saveList.h" />
+    <ClInclude Include="searchList.h" />
+    <ClInclude Include="showList.h" />
+    <ClInclude Include="menu.h" />
+    <ClInclude Include="removePerson.h" />
+    <ClInclude Include="sortList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
