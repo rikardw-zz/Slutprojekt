@@ -1,7 +1,9 @@
 #include <iostream>
 #include <string>
+#include <algorithm>
 #include "constants.h"
 #include "addPerson.h"
+
 
 using namespace std;
 
@@ -25,7 +27,16 @@ vector<person> addPersonToList(vector<person> personVector){
 	cin >> lastName;
 	cout << "Lenght: ";
 	cin >> length;
-	signature = "xxXX";
+	signature = createSignature(foreName, lastName);
 	personVector.push_back(addPerson(foreName, lastName, signature, length));
 	return personVector;
+}
+
+string createSignature(string foreName, string lastName){
+	string signature = "";
+	transform(foreName.begin(), foreName.end(), foreName.begin(), ::tolower);
+	transform(lastName.begin(), lastName.end(), lastName.begin(), ::tolower);
+	signature = signature + foreName.substr(0,3);
+	signature = signature + lastName.substr(0,3);
+	return signature;
 }

@@ -3,6 +3,7 @@
 #include "menu.h"
 #include "addPerson.h"
 #include "saveList.h"
+#include "showList.h"
 
 using namespace std;
 
@@ -31,6 +32,7 @@ void selectionMenu(vector<person> personVector) {
 		{
 		case 1:
 			cout << "See list" << endl;
+			printList(personVector);
 			break;
 
 		case 2:
