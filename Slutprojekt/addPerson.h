@@ -1,3 +1,4 @@
-person addPerson(string foreName, string lastName, string signature, double length);
+#include <vector>
 
-void addPersonToList(void);
+person addPerson(string foreName, string lastName, string signature, double length);
+vector<person> addPersonToList(vector<person> personVector);

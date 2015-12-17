@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "constants.h"
+#include "addPerson.h"
 
 using namespace std;
 
@@ -15,7 +16,7 @@ person addPerson(string foreName, string lastName, string signature, double leng
 	return createdPerson;
 }
 
-void addPersonToList(void){
+vector<person> addPersonToList(vector<person> personVector){
 	string foreName, lastName, signature;
 	double length;
 	cout << "Forename: ";
@@ -25,5 +26,6 @@ void addPersonToList(void){
 	cout << "Lenght: ";
 	cin >> length;
 	signature = "xxXX";
-	addPerson(foreName, lastName, signature, length);
+	personVector.push_back(addPerson(foreName, lastName, signature, length));
+	return personVector;
 }

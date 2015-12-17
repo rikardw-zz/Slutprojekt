@@ -1,20 +1,12 @@
 #include <iostream>
-#include "constants.h"
-#include "addPerson.h"
-#include "openList.h"
-#include "randomizeList.h"
-#include "saveList.h"
-#include "searchList.h"
-#include "showList.h"
-#include "removePerson.h"
-#include "sortList.h"
+#include <vector>
 #include "menu.h"
 
 using namespace std;
 
 int main(){
-
-	selectionMenu();
+	vector<person> personVector;
+	selectionMenu(personVector);
 	
 	return 0;
 }

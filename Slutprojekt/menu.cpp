@@ -1,26 +1,29 @@
 #include <iostream>
+#include <vector>
 #include "menu.h"
-#include "constants.h"
 #include "addPerson.h"
+#include "saveList.h"
 
 using namespace std;
 
-void selectionMenu(void){
-		cout << " **********THE LISTPROGRAM***********" << endl;
-		cout << " ====================================" << endl;
-		cout << " 1. See list " << endl;
-		cout << " 2. Add person" << endl;
-		cout << " 3. Remove person" << endl;
-		cout << " 4. Randomize list" << endl;
-		cout << " 5. Sort list" << endl;
-		cout << " 6. Search" << endl;
-		cout << " 7. Open list" << endl;
-		cout << " 8. Save list" << endl;
-		cout << endl;
-		cout << " 0. Exit " << endl;
-		cout << " ====================================" << endl;
-		cout << " Enter your selection: ";
-		int selection;
+void selectionMenu(vector<person> personVector) {
+	cout << " **********THE LISTPROGRAM***********" << endl;
+	cout << " ====================================" << endl;
+	cout << " 1. See list " << endl;
+	cout << " 2. Add person" << endl;
+	cout << " 3. Remove person" << endl;
+	cout << " 4. Randomize list" << endl;
+	cout << " 5. Sort list" << endl;
+	cout << " 6. Search" << endl;
+	cout << " 7. Open list" << endl;
+	cout << " 8. Save list" << endl;
+	cout << endl;
+	cout << " 0. Exit " << endl;
+	cout << " ====================================" << endl;
+	cout << " Enter your selection: ";
+
+	int selection;
+	
 	do
 	{
 		cin >> selection;
@@ -32,14 +35,16 @@ void selectionMenu(void){
 
 		case 2:
 			cout << "Add person" << endl;
-			addPersonToList();
+			personVector = addPersonToList(personVector);
 			break;
 		case 3:
 			cout << "Rename person" << endl;
+			// renamePerson(oldName, newName, personVector)
 			break;
 
 		case 4:
 			cout << "Randomize list" << endl;
+			// randomizeList(personVector)
 			break;
 
 		case 5:

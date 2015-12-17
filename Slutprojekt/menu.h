@@ -1,1 +1,4 @@
-void selectionMenu(void);
+#include <vector>
+#include "constants.h"
+
+void selectionMenu(vector<person> personVector);
