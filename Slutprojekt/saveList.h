@@ -1,2 +1,1 @@
-void saveOnFile(string fileName);
-string fileName(string fileName);
+void saveToFile(string fileName, vector<person> personVector);

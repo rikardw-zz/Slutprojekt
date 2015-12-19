@@ -63,6 +63,7 @@ void selectionMenu(vector<person> personVector) {
 
 		case 8:
 			cout << "Save list" << endl;
+			saveToFile("TEXT.txt", personVector);
 			break;
 			
 		case 0:

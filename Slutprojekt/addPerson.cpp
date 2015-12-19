@@ -14,7 +14,6 @@ person addPerson(string foreName, string lastName, string signature, double leng
 		signature,
 		length	
 	};
-	cout << "Your forename is:" << createdPerson.foreName;
 	return createdPerson;
 }
 
