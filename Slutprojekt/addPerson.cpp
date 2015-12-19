@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
+#include <vector>
 #include "constants.h"
 #include "addPerson.h"
 

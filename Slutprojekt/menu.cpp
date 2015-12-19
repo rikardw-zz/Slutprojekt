@@ -4,6 +4,7 @@
 #include "addPerson.h"
 #include "saveList.h"
 #include "showList.h"
+#include "openList.h"
 
 using namespace std;
 
@@ -59,6 +60,7 @@ void selectionMenu(vector<person> personVector) {
 
 		case 7:
 			cout << "Open list" << endl;
+			personVector = readFromFile("TEXT.txt", personVector);
 			break;
 
 		case 8:
