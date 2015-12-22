@@ -22,13 +22,15 @@ vector<person> addPersonToList(vector<person> personVector){
 	string foreName, lastName, signature;
 	double length;
 	cout << "Forename: ";
-	cin >> foreName;
+	getline(cin,foreName);
 	cout << "Lastname: ";
-	cin >> lastName;
+	getline(cin,lastName);
 	cout << "Lenght: ";
 	cin >> length;
 	signature = createSignature(foreName, lastName);
 	personVector.push_back(addPerson(foreName, lastName, signature, length));
+	cout << endl << foreName << " " << lastName << " has been added to your list (signature: " << signature <<")" << endl;
+	system("pause");
 	return personVector;
 }
 

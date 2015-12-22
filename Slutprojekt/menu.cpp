@@ -5,38 +5,30 @@
 #include "saveList.h"
 #include "showList.h"
 #include "openList.h"
+#include "sortList.h"
 
 using namespace std;
 
 void selectionMenu(vector<person> personVector) {
-	cout << " **********THE LISTPROGRAM***********" << endl;
-	cout << " ====================================" << endl;
-	cout << " 1. See list " << endl;
-	cout << " 2. Add person" << endl;
-	cout << " 3. Remove person" << endl;
-	cout << " 4. Randomize list" << endl;
-	cout << " 5. Sort list" << endl;
-	cout << " 6. Search" << endl;
-	cout << " 7. Open list" << endl;
-	cout << " 8. Save list" << endl;
-	cout << endl;
-	cout << " 0. Exit " << endl;
-	cout << " ====================================" << endl;
-	cout << " Enter your selection: ";
-
 	int selection;
 	
 	do
 	{
+		system("CLS");
+		printLogo();
+		menuItems();
 		cin >> selection;
 		switch (selection)
 		{
 		case 1:
-			cout << "See list" << endl;
+			system("CLS");
 			printList(personVector);
+			system("pause");
 			break;
 
 		case 2:
+			system("CLS");
+			cin.ignore(1000, '\n');
 			cout << "Add person" << endl;
 			personVector = addPersonToList(personVector);
 			break;
@@ -51,7 +43,8 @@ void selectionMenu(vector<person> personVector) {
 			break;
 
 		case 5:
-			cout << "Sort list" << endl;
+			cout << "Sort list" << endl;/*
+			personVector = sortList(personVector);*/
 			break;
 
 		case 6:
@@ -59,22 +52,52 @@ void selectionMenu(vector<person> personVector) {
 			break;
 
 		case 7:
+			system("CLS");
 			cout << "Open list" << endl;
 			personVector = readFromFile("TEXT.txt", personVector);
-			break;
+			system("pause");
+		break;
 
 		case 8:
+			system("CLS");
 			cout << "Save list" << endl;
-			saveToFile("TEXT.txt", personVector);
+			saveToFile(personVector);
+			system("pause");
 			break;
 			
 		case 0:
 			cout << "Bye.\n";
 			break;
 
-		default: cout << selection << " is not a valid choice.\n";
-			cout << endl;
+		default: cout << selection << " is not a valid choice." << endl;
+			system("pause");
 		}
 
 	}while (selection != 0 );
+}
+
+void menuItems(){
+	cout << endl;
+	cout << " ====================================" << endl;
+	cout << " 1. See list " << endl;
+	cout << " 2. Add person" << endl;
+	cout << " 3. Remove person" << endl;
+	cout << " 4. Randomize list" << endl;
+	cout << " 5. Sort list" << endl;
+	cout << " 6. Search" << endl;
+	cout << " 7. Open list" << endl;
+	cout << " 8. Save list" << endl;
+	cout << endl;
+	cout << " 0. Exit " << endl;
+	cout << " ====================================" << endl;
+	cout << " Enter your selection: ";
+
+}
+
+void printLogo(){
+	
+	cout << "     ============================" << endl; 
+	cout << "     |L I S T  G E N E R A T O R|" << endl;
+	cout << "     ============================" << endl; 
+
 }
