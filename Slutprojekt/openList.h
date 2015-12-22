@@ -1,1 +1,1 @@
-vector<person> readFromFile(string fileName, vector<person> personVector);
+vector<person> readFromFile(vector<person> personVector);

@@ -1,9 +1,11 @@
 using namespace std;
 
-struct person
+const struct person
 {
 	string foreName;
 	string lastName;
 	string signature;
-	double length;
+	float length;
 };
+
+const char DELIM = '|';

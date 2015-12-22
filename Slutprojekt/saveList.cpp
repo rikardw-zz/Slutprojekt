@@ -13,7 +13,7 @@ void saveToFile(vector<person> personVector) {
 	
 	if(outFile.is_open()){
 		for (size_t i = 0; i < personVector.size(); i++){
-			outFile << personVector[i].foreName << "," << personVector[i].lastName << "," << personVector[i].length << ","  << personVector[i].signature << endl;
+			outFile << personVector[i].foreName << DELIM << personVector[i].lastName << DELIM << personVector[i].length << DELIM  << personVector[i].signature << endl;
 		} 
 	}
 	outFile.close();

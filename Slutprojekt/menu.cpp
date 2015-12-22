@@ -54,7 +54,7 @@ void selectionMenu(vector<person> personVector) {
 		case 7:
 			system("CLS");
 			cout << "Open list" << endl;
-			personVector = readFromFile("TEXT.txt", personVector);
+			personVector = readFromFile(personVector);
 			system("pause");
 		break;
 
