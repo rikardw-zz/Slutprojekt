@@ -32,10 +32,10 @@ vector<person> readFromFile(vector<person> personVector)
 			lastName = personInfo.substr(0, delimNumber);
 			personInfo = personInfo.substr(delimNumber+1);
 			delimNumber = personInfo.find(DELIM); //hämtar informationen igen, dock nu utan förnamn,efternamn
-			length = stof(personInfo.substr(0, delimNumber));
+			signature = personInfo.substr(0, delimNumber);
 			personInfo = personInfo.substr(delimNumber+1);
 			delimNumber = personInfo.find(DELIM); //hämtar informationen igen, dock nu utan förnamn, efternamn och längd
-			signature = personInfo.substr(0, delimNumber);
+			length = stof(personInfo.substr(0, delimNumber));
 			
 			personVector.push_back(addPerson(foreName, lastName, signature, length));
 		
