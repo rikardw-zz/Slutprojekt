@@ -12,8 +12,15 @@ void printList(vector<person> personVector){
 	//cout << fixed << setprecision(2);
 
 		cout << "People in list: " << personVector.size() << endl << endl;
-		cout << "Nr" << setw(6) << "Sign" << setw(12) << "Name" << setw(30) << "Lenght [m]" << endl;
+		cout << left << setw(5) << "Nr";
+		cout << left << setw(10) << "Sign";
+		cout << left << setw(30) << "Name";
+		cout << right << setw(10) << "Lenght [m]" << endl;
 		for (size_t i=0; i < personVector.size(); i++){
-			cout << i+1 << "." << setw(8) << personVector[i].signature << setw(10) << personVector[i].foreName << " " << personVector[i].lastName << setw(22) << personVector[i].length << endl;
+			cout << left << setw(5) << i+1;
+			cout << left << setw(10) << personVector[i].signature;
+			cout << left << setw(30) << personVector[i].foreName + " " + personVector[i].lastName;
+			cout << right << setw(10) << personVector[i].length;
+			cout << endl;
 		}
 }
