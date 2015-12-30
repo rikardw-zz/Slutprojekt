@@ -8,7 +8,7 @@
 using namespace std;
 
 void printList(vector<person> personVector){
-	cout << "*** LIST ***" << endl;
+	cout << endl;
 		cout << "People in list: " << personVector.size() << endl << endl;
 		cout << left << setw(5) << "Nr";
 		cout << left << setw(10) << "Sign";

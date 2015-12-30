@@ -7,6 +7,7 @@
 #include "openList.h"
 #include "sortList.h"
 #include "searchList.h"
+#include "removePerson.h"
 
 using namespace std;
 
@@ -23,19 +24,23 @@ void selectionMenu(vector<person> personVector) {
 		{
 		case 1:
 			system("CLS");
+			cout << "***SEE LIST***" << endl;
 			printList(personVector);
 			system("pause");
 			break;
 
 		case 2:
 			system("CLS");
-			cin.ignore(1000, '\n'); //"flushar" funktionen CLS, skapade problem annars
-			cout << "Add person" << endl;
+			cout << "***ADD PERSON***" << endl;
+			cin.ignore(1000, '\n'); //"flushar" funktionen så CLS fungerar i det här fallet, skapade problem annars
 			personVector = addPersonToList(personVector);
 			break;
 		case 3:
-			cout << "Rename person" << endl;
-			// renamePerson(oldName, newName, personVector)
+			system("CLS");
+			cout << "***REMOVE PERSON***" << endl;
+			personVector = removePerson(personVector);
+			system("pause");
+			
 			break;
 
 		case 4:
@@ -50,27 +55,27 @@ void selectionMenu(vector<person> personVector) {
 
 		case 6:
 			system("CLS");
-			cout << "Search" << endl;
+			cout << "***SEARCH***" << endl;
 			searchSignature(personVector);
 			system("pause");
 			break;
 
 		case 7:
 			system("CLS");
-			cout << "Open list" << endl;
+			cout << "***OPEN LIST***" << endl;
 			personVector = readFromFile(personVector);
 			system("pause");
 		break;
 
 		case 8:
 			system("CLS");
-			cout << "Save list" << endl;
+			cout << "***SAVE LIST***" << endl;
 			saveToFile(personVector);
 			system("pause");
 			break;
 			
 		case 0:
-			cout << "Bye.\n";
+			cout << "gbye";
 			break;
 
 		default: cout << selection << " is not a valid choice." << endl;
