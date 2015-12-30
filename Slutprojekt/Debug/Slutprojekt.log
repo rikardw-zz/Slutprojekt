@@ -1,4 +1,4 @@
-﻿Build started 2015-12-30 18:07:24.
+﻿Build started 2015-12-30 18:20:17.
      1>Project "C:\Users\Rikard\Documents\GitHub\Slutprojekt\Slutprojekt\Slutprojekt.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\Slutprojekt.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -32,4 +32,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.88
+Time Elapsed 00:00:00.96
