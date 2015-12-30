@@ -1,6 +1,6 @@
 Rikard|Wiklander|rikwik|1.8411
 Mariya|Lysenkova|marlys|1.7
-Olle|Ollsson|olloll|1.221
+Olle|Ollsson|testte|1.221
 Karl|Karlsson|rikwik|1.8411
 Jan|Jansson|marlys|1.7
 Evert|Svensson|olloll|1.221

@@ -6,6 +6,7 @@
 #include "showList.h"
 #include "openList.h"
 #include "sortList.h"
+#include "searchList.h"
 
 using namespace std;
 
@@ -28,7 +29,7 @@ void selectionMenu(vector<person> personVector) {
 
 		case 2:
 			system("CLS");
-			cin.ignore(1000, '\n');
+			cin.ignore(1000, '\n'); //"flushar" funktionen CLS, skapade problem annars
 			cout << "Add person" << endl;
 			personVector = addPersonToList(personVector);
 			break;
@@ -48,7 +49,10 @@ void selectionMenu(vector<person> personVector) {
 			break;
 
 		case 6:
+			system("CLS");
 			cout << "Search" << endl;
+			searchSignature(personVector);
+			system("pause");
 			break;
 
 		case 7:
