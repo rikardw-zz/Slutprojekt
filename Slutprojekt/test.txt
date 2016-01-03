@@ -20,3 +20,4 @@ Jonas|Svensson|jonsve|1.333
 Emanuel|Kant|emakan|1.22
 Saint|Nicolaus|sainic|1.9
 Henrik|Henriksson|henhen|1.22
+henrik|henriksson|henhen|1.22

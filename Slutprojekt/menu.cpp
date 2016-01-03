@@ -57,13 +57,13 @@ void selectionMenu(vector<person> personVector) {
 			break;
 
 		case 6:
-			cout << "***SORT LIST BY SIGNATURE***" << endl;/*
-			personVector = sortList(personVector);*/
+			cout << "***SORT LIST BY SIGNATURE***" << endl;
+			personVector = sortList(personVector, 2);
 			break;
 
 		case 7:
-			cout << "***SORT LIST BY HEIGHT***" << endl;/*
-			personVector = sortList(personVector);*/
+			cout << "***SORT LIST BY HEIGHT***" << endl;
+			personVector = sortList(personVector, 3);
 			break;
 		
 		case 8:
