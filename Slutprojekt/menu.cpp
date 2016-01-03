@@ -51,8 +51,9 @@ void selectionMenu(vector<person> personVector) {
 			break;
 
 		case 5:
-			cout << "***SORT LIST BY NAME***" << endl;/*
-			personVector = sortList(personVector);*/
+			cout << "***SORT LIST BY NAME***" << endl;
+		//	sortType sort = name;
+			personVector = sortList(personVector, 1);
 			break;
 
 		case 6:

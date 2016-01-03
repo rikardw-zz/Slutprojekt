@@ -9,3 +9,5 @@ const struct person
 };
 
 const char DELIM = '|';
+
+enum sortType {name, signature, height};
