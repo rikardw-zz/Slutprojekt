@@ -36,18 +36,18 @@ bool compareLength(person person1, person person2){
 	return person1.length > person2.length;
 }
 
-vector<person> sortList(vector<person> personVector, int sortType){
+vector<person> sortList(vector<person> personVector, sort_type sortType){
 	switch (sortType)
 	{
-	case 1:
+	case SORT_NAME:
 		sort(personVector.begin(), personVector.end(), compareNames);
 		break;
 
-	case 2:
+	case SORT_SIGNATURE:
 		sort(personVector.begin(), personVector.end(), compareSignatures);
 		break;
 
-	case 3:
+	case SORT_LENGTH:
 		sort(personVector.begin(), personVector.end(), compareLength);
 		break;
 	}

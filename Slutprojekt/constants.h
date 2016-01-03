@@ -10,4 +10,4 @@ const struct person
 
 const char DELIM = '|';
 
-enum sortType {name, signature, height};
+const enum sort_type {SORT_NAME, SORT_SIGNATURE, SORT_LENGTH};
